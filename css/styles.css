@@ -1,0 +1,281 @@
+:root {
+--primary-font: "Roboto", sans-serif;
+--secondary-font: "Raleway", sans-serif;
+--accent-color: #404bbf;
+--color-iris: #4d5ae5;
+--color-white: #ffffff;
+--color-cloud: #f4f4fd;
+--color-navy-blue: #2e2f42;
+--color-slate: #434455;
+--color-cornflower: #E7E9FC;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-cloud);
+  background-color: var(--color-white);
+}
+
+/* ===============HEADER============== */
+.logo {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-navy-blue);
+}
+.accent {
+  color: var(--color-iris);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-email,
+.contact-phone {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+}
+
+.contact-email:hover,
+.contact-email:focus {
+  color: var(--accent-color);
+}
+
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--accent-color);
+}
+
+/* ============ /HEADER============ */
+
+/* ============ HERO============ */
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+  }
+
+ .hero {
+  background-color: var(--color-navy-blue);
+} 
+
+.hero-btn {
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--color-iris);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--accent-color);
+}
+/* ============ /HERO============ */
+
+/* ===============DISCRIPTION================ */
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.subtitle-discrip {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue); 
+}
+
+.discription-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-slate);
+}
+
+/* ===============/DISCRIPTION================ */
+
+/* ================WHAT ARE WE DOING=================== */
+
+.team-work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+}
+
+/* ==========/WHAT ARE WE DOING============= */
+
+/* =======TEAM========== */
+
+.team {
+    background-color: var(--color-cloud);
+}
+
+.title-team {
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--color-navy-blue);
+}
+
+.team-mait {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--color-navy-blue);
+
+}
+
+.team-spec {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-slate);
+
+}
+
+.team-card {
+    width: 264px;
+    background: var(--color-white);
+}
+
+/* ===========/TEAM============= */
+
+/* ==========FOOTER============== */
+
+.footer {
+    background: var(--color-navy-blue);
+}
+
+.footer-logo {
+    font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--color-cloud);
+}
+
+.footer-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-cornflower);
+}
+
+/* =============/FOOTER===================== */
+
+
+/* =============COMPONENTS================= */
+
+.buttons {
+    background: var(--color-cloud);
+    border: 1px solid var(--color-cornflower);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  
+    color: var(--color-iris);
+    cursor: pointer;
+  }
+  
+  .buttons:hover,
+  .buttons:focus {
+    background: var(--accent-color);
+    color: var(--color-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .nav {
+    font-style: normal;
+  }
+  
+  .gallery {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+  }
+  
+  /* ================/COMPONENTS==================== */
+
+/* =============PORTFOLIO============== */
+
+.img-text {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--color-navy-blue);
+}
+
+.card-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--color-slate);
+}
+
+/* ===============/PORTFOLIO=============== */
