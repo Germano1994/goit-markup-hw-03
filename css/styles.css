@@ -10,6 +10,30 @@
 --color-cornflower: #E7E9FC;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .list {
   list-style: none;
 }
@@ -26,7 +50,56 @@ body {
   background-color: var(--color-white);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ===============HEADER============== */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 76px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .logo {
   text-decoration: none;
   font-family: var(--secondary-font);
@@ -60,6 +133,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  margin-right: 40px;
 }
 
 .contact-email:hover,
@@ -82,22 +156,25 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-white);
+    margin-bottom: 48px;
   }
 
  .hero {
   background-color: var(--color-navy-blue);
+  text-align: center;
 } 
 
 .hero-btn {
-    width: 169px;
-    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     background: var(--color-iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer;
     color: var(--color-white);
 }
 
@@ -122,12 +199,20 @@ body {
     margin: -1px;
 }
 
+.discrip {
+  display: flex;
+}
+
 .subtitle-discrip {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue); 
+}
+
+.subtitle-discrip:not(:last-child) {
+  margin-right: 24px;
 }
 
 .discription-text {
@@ -150,11 +235,19 @@ color: var(--color-slate);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-navy-blue);
+    margin-bottom: 72px;
+}
+
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /* ==========/WHAT ARE WE DOING============= */
 
 /* =======TEAM========== */
+
 
 .team {
     background-color: var(--color-cloud);
@@ -168,6 +261,24 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--color-navy-blue);
+margin-bottom: 72px;
+}
+
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.team-card {
+    flex-basis: calc((100% - 72px) / 4);
+    background: var(--color-white);
+}
+
+.team-card-content-wrapper {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-mait {
@@ -176,7 +287,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--color-navy-blue);
-
+margin-bottom: 8px;
 }
 
 .team-spec {
@@ -188,16 +299,13 @@ color: var(--color-slate);
 
 }
 
-.team-card {
-    width: 264px;
-    background: var(--color-white);
-}
 
 /* ===========/TEAM============= */
 
 /* ==========FOOTER============== */
 
 .footer {
+  padding-top: 100px;
     background: var(--color-navy-blue);
 }
 
@@ -216,14 +324,30 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-cornflower);
+margin-top: 16px;
+padding-bottom: 100px;
 }
 
 /* =============/FOOTER===================== */
 
 
 /* =============COMPONENTS================= */
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.filter-btn:not(:last-child) {
+  margin-right: 24px;
+}
 
 .buttons {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
     background: var(--color-cloud);
     border: 1px solid var(--color-cornflower);
     border-radius: 4px;
@@ -233,7 +357,6 @@ color: var(--color-cornflower);
     letter-spacing: 0.04em;
   
     color: var(--color-iris);
-    cursor: pointer;
   }
   
   .buttons:hover,
@@ -261,6 +384,11 @@ color: var(--color-cornflower);
   /* ================/COMPONENTS==================== */
 
 /* =============PORTFOLIO============== */
+.picture-card-content-wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid #E7E9FC;;
+}
 
 .img-text {
 font-weight: 500;
@@ -268,6 +396,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--color-navy-blue);
+margin-bottom: 8px;
 }
 
 .card-text {

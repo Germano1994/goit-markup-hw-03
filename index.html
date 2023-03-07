@@ -10,12 +10,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
 
 
     <header class="page-header">
+      <div class="container page-header-container">
       <nav class="page-nav">
         <a href="./index.html" class="logo"
           ><span class="accent">Web</span>Studio</a
@@ -33,7 +35,7 @@
         </ul>
       </nav>
       <address class="nav">
-        <ul class="list">
+        <ul class="list contact-header">
           <li>
             <a class="contact-email link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -46,17 +48,18 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero container section">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-btn" type="button">Order Service</button>
       </section>
       <!-- Our qualities -->
-      <section class="discription">
+      <section class="discription container section">
         <h2 class="hidden"></h2>
-        <ul class="list">
+        <ul class="list discrip section">
           <li>
             <h3 class="subtitle-discrip">Strategy</h3>
 
@@ -89,9 +92,9 @@
         </ul>
       </section>
       <!-- What are we doing -->
-      <section class="team-work">
+      <section class="team-work section">
         <h2 class="team-work-title">What are we doing</h2>
-        <ul class="list">
+        <ul class="list container picture">
           <li>
             <img
               src="./images/informations/computer.jpg"
@@ -116,17 +119,19 @@
         </ul>
       </section>
       <!-- Team -->
-      <section class="team">
+      <section class="team container section">
         <h2 class="title-team">Our Team</h2>
-        <ul class="list">
+        <ul class="list employees card">
           <li class="team-card">
             <img
               src="./images/team/mark-guerrero.jpg"
               alt="mark-guerrero"
               width="264"
               height="260">
+              <div class="team-card-content-wrapper">
             <h3 class="team-mait">Mark Guerrero</h3>
             <p class="team-spec">Product Designer</p>
+            </div>
           </li>
           <li class="team-card">
             <img
@@ -134,8 +139,10 @@
               alt="tom-ford"
               width="264"
               height="260">
+              <div class="team-card-content-wrapper">
             <h3 class="team-mait">Tom Ford</h3>
             <p class="team-spec">Frontend Developer</p>
+          </div>
           </li>
           <li class="team-card">
             <img
@@ -143,8 +150,10 @@
               alt="camila-garcia"
               width="264"
               height="260">
+              <div class="team-card-content-wrapper">
             <h3 class="team-mait">Camila Garcia</h3>
             <p class="team-spec">Marketing</p>
+          </div>
           </li>
           <li class="team-card">
             <img
@@ -152,13 +161,15 @@
               alt="daniel-wilson"
               width="264"
               height="260">
+              <div class="team-card-content-wrapper">
             <h3 class="team-mait">Daniel Wilson</h3>
             <p class="team-spec">UI Designer</p>
+          </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a href="./index.html" class="logo footer-logo"
         ><span class="accent">Web</span>Studio</a
       >
