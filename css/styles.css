@@ -168,6 +168,8 @@ body {
  .hero {
   background-color: var(--color-navy-blue);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 } 
 
 .hero-btn {
@@ -206,17 +208,14 @@ body {
     margin: -1px;
 }
 
-.discription-text-subtitle {
-  padding-top: 120px;
-}
-
 .discrip {
   display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .discrip-text {
   width: 264px;
-  margin-right: 24px;
 }
 
 .subtitle-discrip {
@@ -240,7 +239,7 @@ color: var(--color-slate);
 
 /* ================WHAT ARE WE DOING=================== */
 .team-section {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .team-work-title {
@@ -267,7 +266,6 @@ color: var(--color-slate);
 /* ==========/WHAT ARE WE DOING============= */
 
 /* =======TEAM========== */
-
 
 .team {
     background-color: var(--color-cloud);
@@ -340,6 +338,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-cloud);
+margin-right: 0;
 }
 
 .footer-text {
@@ -358,12 +357,13 @@ margin-top: 16px;
 /* =============COMPONENTS================= */
 .portfolio {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
 }
 
 .btn {
   display: flex;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .filter-btn:not(:last-child) {
